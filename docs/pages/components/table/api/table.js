@@ -463,7 +463,7 @@ export default [
                 parameters: '<code>row: Object</code>'
             },
             {
-                name: '<code>cellClick</code>',
+                name: '<code>cellclick</code>',
                 description: 'Triggers when a cell is clicked',
                 parameters: '<code>row: Object</code>, <code>column: Vue Object</code>, <code>rowIndex: Number</code>, <code>columnIndex: Number</code>,'
             },
@@ -667,6 +667,13 @@ export default [
                 type: 'Boolean',
                 values: '—',
                 default: '<code>false</code>'
+            },
+            {
+                name: '<code>custom-search</code>',
+                description: 'Custom search method, works when column is <code>searchable</code>',
+                type: 'Function (a: Object, input: String)',
+                values: '—',
+                default: '—'
             },
             {
                 name: '<code>subheading</code>',
